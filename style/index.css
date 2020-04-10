@@ -149,6 +149,16 @@ footer nav a {
     text-decoration: none;
 }
 
+footer nav a:hover {
+    animation: footerNavChange 0.5s forwards;
+}
+
+@keyframes footerNavChange {
+    100% {
+        color: skyblue;
+    }
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -171,6 +181,18 @@ header nav {
 header nav a {
     text-decoration: none;
     font-family: "Rubik", sans-serif;
+    color: black;
+}
+
+header nav a:hover {
+    animation: navChange 0.5s forwards;
+}
+
+@keyframes navChange {
+    100% {
+        color: white;
+        background: black;
+    }
 }
 
 .jumbo {
@@ -289,7 +311,12 @@ header nav a {
         width: 100%;
     }
     header nav a:hover {
-        background: darkgray;
+        animation: buttonChange 0.5s forwards;
+    }
+    @keyframes buttonChange {
+        100% {
+            background: darkgray;
+        }
     }
 }
 
