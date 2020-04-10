@@ -170,6 +170,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
+    font-family: "Rubik", sans-serif;
 }
 
 .jumbo {
@@ -287,9 +288,27 @@ header nav a {
     header .jumbo img {
         width: 100%;
     }
+    header nav a:hover {
+        background: darkgray;
+    }
 }
 
 @media (max-width: 500px) {
     header {
+        width: 100%;
+        font-size: 2.0rem;
+        margin: 1% 30%;
+    }
+    .middle-content h2 {
+        font-size: 3.0rem;
+    }
+    .top-content h2 {
+        font-size: 3.0rem;
+    }
+    .top-content .text-container {
+        font-size: 2.2rem;
+    }
+    .middle-content .boxes .box {
+        font-size: 2.2rem;
     }
 }
